@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="ui.bootstrap.demo">
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+    <script src="example.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+<div ng-controller="ButtonsCtrl">
+  <tabset vertical="true" type="pills">
+      <tab heading="Month">
+<hr />
+                <pre>{{checkModel}}</pre>
+                <div class="btn-group">
+                    <label class="btn btn-primary" ng-model="checkModel.sport.2015.01.09" btn-checkbox>9</label>
+                    <label class="btn btn-primary" ng-model="checkModel.sport.2015.01.10" btn-checkbox>10</label>
+                    <label class="btn btn-primary" ng-model="checkModel.sport.2015.01.11" btn-checkbox>11</label>
+                </div>
+      </tab>
+     
+      <tab heading="week">
+          <hr /> 
+      </tab>
+  </tabset>
+</div>
+  </body>
+</html>
